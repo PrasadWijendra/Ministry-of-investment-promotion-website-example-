@@ -1,0 +1,126 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    height: 85px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+}
+
+main .background_image {
+    background-image: url('homepage2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .background_image  {
+    
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+main .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+section.intro, section.services {
+    margin-bottom: 40px;
+}
+
+h2, h3 {
+    color: #2c3e50;
+}
+
+section.mission-vision {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.mission, section.vision {
+    width: 45%;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: auto;
+}
+.panels {
+    display: flex;
+    flex-wrap: wrap; /* Allow panels to wrap to the next line */
+    justify-content: space-between; /* Space evenly between panels */
+}
+
+.panel {
+    flex: 0 0 calc(33.33% - 20px); /* Set width for each panel with appropriate margins */
+    margin-bottom: 20px; /* Add bottom margin */
+    background-color: #f0f0f0; /* Add background color to the panel */
+    padding: 20px; /* Add padding to the panel */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.panel img {
+    max-width: 100%;
+    height: auto;
+}
